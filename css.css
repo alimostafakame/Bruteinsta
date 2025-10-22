@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.clr{
+    clear: both;
+}
+header{
+    background-color: rgb(167, 166, 166);
+    width: 100%;
+    padding: 0 40px;
+}
+.main{
+    background-image: url(./headerbg.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    align-items: center;
+}
+.main .text{
+    position: absolute;
+    top:30%;
+    left:30%;
+    text-align: center;
+    color: white;
+}
+.main .text h1{
+    margin: 15px;
+    padding: 10px;
+    font-size: 50px;
+    border-bottom: solid 1px #2fa4e7;
+}
+.main .text a{
+    margin: 10px 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    line-height: 100px;
+    color: white;
+    border: solid 1px #2fa4e7 ;
+    border-radius: 3px;
+}
+.simple{
+    text-align: center;
+    padding: 30px;
+    background-color: gainsboro;
+}
+.simple h1{
+    color: black;
+    font-size: 40px;
+}
+.simple p{
+    color: gray;
+    font-size: 15px;
+    max-width: 95%;
+    margin: 10px 20px;
+    padding: 10px 20px;
+}
+.cards{
+
+    overflow: hidden;
+    padding: 10px;
+}
+.clr{
+    clear: both;
+}
+.card{
+    float: left;
+    width: 30%;
+    margin: 1.5%;
+    border: 2px solid gainsboro;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+.card h3{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+.card p{
+    text-align: center;
+    font-size: 15px;
+    color: gray;
+}
+.showcase{
+    background-color:gainsboro ;
+}
+.showcase .text{
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+
+}
+.showcase .text h5{
+    color: black;
+    font-size: 30px;
+}
+.showcase .text p{
+    color: gray;
+    font-size: 15px;
+    margin: 30px;
+}
+.showcase .images{
+    overflow: hidden;
+    padding: 10px;
+}
+.img{
+    float: left;
+    width: 30%;
+    margin: 1.5%;
+    border: 2px solid gainsboro;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+.img img{
+    width: 100%;
+    height: 200px;
+    object-fit:cover ;
+    border-radius: 5px;
+}
+img:hover{
+    transform: scale(1.05) rotate(2deg);
+    border-color: #2196f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0 00.3s) ;
+}
+.contact  {
+    background-image: url(./contactbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background:before;
+    opacity: 0.8;
+
+}
+.contact .for {
+    margin-left: 40%;
+}
+.contact .for .in {
+    background:transparent;
+    padding-right:50px;
+    padding:5px ;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px rgba(0, 0, 255, 0.243) solid;
+}
+.contact h1 {
+    font-family: Arial, sans-serif;
+    color: white ;
+    text-align: center;
+}
+.contact p {
+    font-family:Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+.contact .for .checkbox {
+    color: white;
+    font-size: 15px;
+}
+
+.contact .for .button {
+    padding: 5px 25px;
+    color: white;
+    background:transparent ;
+    border:3px rgba(0, 0, 255, 0.315) solid;
+    margin-left: 110px;
+}
+footer {
+    background-color: gainsboro;
+    overflow: hidden;
+    margin: 20px 0;
+
+}
+footer .images {
+    float: right;
+    width: 70px;
+    margin-right: 100px;
+    display: flex;
+    margin-top:10px ;
+}
+footer .images img {
+    width: 30%;
+    padding: 4px;
+}
+.clr {
+    clear: both;
+}
+footer p {
+    float: left;
+    padding: 10px;
+    margin-left: 50px;
+}
+@media (max-width: 768px) {
+
+    header {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .main .text {
+        top: 25%;
+        left: 10%;
+        right: 10%;
+    }
+
+    .main .text h1 {
+        font-size: 30px;
+    }
+
+    .main .text a {
+        display: inline-block;
+        padding: 8px 15px;
+        line-height: normal;
+    }
+
+    .cards {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 15px 0;
+    }
+
+    .img {
+        width: 100%;  
+        margin: 10px 0;
+        float: none;
+    }
+
+    .img img {
+        height: 180px;
+    }
+
+    .contact .for {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .contact .for .button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    footer p {
+        float: none;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    footer .images {
+        float: none;
+        justify-content: center;
+        margin: 10px auto;
+    }
+}
+@media (min-width: 769px) {
+    .cards {
+        flex-direction: row;
+    }
+    .card {
+        width: 30%;
+    }
+}
